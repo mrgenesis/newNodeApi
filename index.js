@@ -15,3 +15,8 @@ const path = require('path')
 if (localhostEnvVariavels) {
   require('dotenv').config({ path: localhostEnvVariavels });
 }
+
+const app = require('./src/init')
+  , port = process.env.PORT || 3000;
+
+app.listen(port, () => console.log('>>> Running at port ' + port + '...'));
