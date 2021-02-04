@@ -1,8 +1,8 @@
 Configuração da estrutura do projeto:
   + Criar uma rota de test
-  - carregamento de todas as variáveis do sistema
+  + carregamento de todas as variáveis do sistema em modo de desenvolvimento
   - carregamento de todas as dependencias do sistema do sistema
-  
+
   Configurar a estrutura de tests com Jest:
     + adicionar --watchAll na execução do script de tests
     + modificar a exibição dos resultados no console

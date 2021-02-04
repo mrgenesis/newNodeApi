@@ -1,10 +1,9 @@
-require('./config').init();
+require('./loader/setEnvVariables');
 
 const express = require('express')
   , app = express();
 
-
-require('./routes/index')(app);
+require('./route/index')(app);
 
 
 module.exports = app;
