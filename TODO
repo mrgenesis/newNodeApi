@@ -1,0 +1,9 @@
+Configuração da estrutura do projeto:
+  + Criar uma rota de test
+  Configurar a estrutura de tests com Jest:
+    - adicionar --watchAll na execução do script de tests
+    - modificar a exibição dos resultados no console
+    - definir pasta onde os arquivos de testes serão salvos
+
+Configurar banco de dados:
+  - definir uma estrutura que permita a troca de banco de dados sem modificar quase nada no aplicativo
