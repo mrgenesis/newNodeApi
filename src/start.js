@@ -1,7 +1,4 @@
-require('./loader/setEnvVariables');
-
-const express = require('express')
-  , app = express();
+const app = require('./loader');
 
 require('./route/index')(app);
 
