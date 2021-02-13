@@ -1,6 +1,3 @@
-const app = require('./loader');
-
-require('./route/index')(app);
-
+const app = require('./autoloader');
 
 module.exports = app;

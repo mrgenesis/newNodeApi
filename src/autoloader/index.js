@@ -12,7 +12,12 @@ const
 require(path.join(__dirname, 'setEnvVariables'));
 
 // Obtem a bibliotéca que lida com as requisições http com os recursos adicionais carreagados.
-module.exports = require(path.join(__dirname, 'HTTPServer'));
+const app = require(path.join(__dirname, 'HTTPServer'));
 
 //let t = fs.readdirSync(__dirname);
 //t = t.filter(f => f[0] !== '.' && path.extname(f) === '.js' && f !== 'index.js')
+const router = require('./router');
+
+app.use(router);
+
+module.exports = app;
